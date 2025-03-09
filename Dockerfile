@@ -1,5 +1,5 @@
 # Use an OpenJDK 21 base image
-FROM eclipse-temurin:21-jdk as runtime
+FROM docker.io/library/eclipse-temurin:21-jdk as runtime
 
 # Set the working directory
 WORKDIR /app
