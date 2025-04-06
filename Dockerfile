@@ -5,10 +5,10 @@ FROM docker.io/library/eclipse-temurin:21-jdk as runtime
 WORKDIR /app
 
 # Copy the Spring Boot JAR file into the container
-COPY myapp.jar /app/myapp.jar
+COPY demoapp.jar /app/demoapp.jar
 
 # Expose the application port (adjust if needed)
 EXPOSE 8080
 
 # Run the Spring Boot application
-CMD ["java", "-jar", "/app/myapp.jar"]
+CMD ["java", "-jar", "/app/demoapp.jar"]
