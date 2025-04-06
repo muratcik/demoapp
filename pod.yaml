@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demoapp-pod
+spec:
+  containers:
+    - name: demoapp-container
+      image: docker.io/muratcik/demoapp:latest
+      ports:
+        - containerPort: 8080
